@@ -252,6 +252,8 @@ body {
   margin-top: 90px;
   border: none;
   border-radius: 50%;
+  background: #444;
+  color: white;
 }
 
 /* End Home Page */
