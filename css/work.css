@@ -127,7 +127,7 @@ body {
 
 /* Start Home Page */
 .homepage {
-  background-image: url(/work/imgs/frame-29@2x.png);
+  background-image: url(../imgs/image1.png);
   background-size: cover;
   height: 1000px;
   position: relative;
@@ -227,28 +227,31 @@ body {
   background-color: white;
 }
 
-.line-div div {
+.line-btns button:not(.active) {
   text-align: center;
-  line-height: 150px;
   position: relative;
-  left: -3px;
-  color: white;
+  left: -5px;
   z-index: 1;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 90px;
+  border: none;
+  /* border-radius: 50%; */
+  width: 8px;
+  height: 8px;
+  color: transparent;
+  background: #444;
 }
-
-.line-div div::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  right: -12px;
-  top: 62px;
-  border-radius: 50%;
-  background-color: #302f2f56;
-  z-index: 2;
+.line-btns button.active {
+  text-align: center;
+  position: relative;
+  left: -10px;
+  z-index: 1;
+  font-weight: bold;
   cursor: pointer;
+  margin-top: 90px;
+  border: none;
+  border-radius: 50%;
 }
 
 /* End Home Page */
@@ -285,108 +288,96 @@ body {
   flex-direction: row-reverse;
 }
 .bag-section .row .sec {
-  height: 233px;
+  height: 280px;
 }
 .bag-section .row .sec .prag {
   text-align: center;
   position: relative;
 }
-.bag-section .row .sec .prag::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: #f3f5f8;
-  border-radius: 50%;
-  border: solid 4px #444;
-  top: 205px;
-  right: 22px;
-}
-.bag-section .row div p {
+.bag-section .row .prag {
   font-size: 20px;
   font-weight: bold;
-  width: 190px;
-  transform: translate(110px, 80px);
-  height: 85px;
+  height: 250px;
+  width: 290px;
+  background-repeat: no-repeat;
 }
-.bag-section .row .sec::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: solid 3px #444444;
-  background-color: #f3f5f8;
-  top: 55px;
-  right: 78px;
+.bag-section .row .prag.one {
+  background-image: url(../imgs/one.png);
+  background-size: cover;
 }
-.bag-section .row .icon {
-  position: relative;
-  transform: translate(7px, 39px);
+.bag-section .row .prag.two {
+  background-image: url(../imgs/two.png);
+  background-size: cover;
+}
+.bag-section .row .prag.three {
+  background-image: url(../imgs/three.png);
+  background-size: cover;
+}
+.bag-section .row .prag.four {
+  background-image: url(../imgs/four.png);
+  background-size: cover;
+}
+.bag-section .row .prag.five {
+  background-image: url(../imgs/five.png);
+  background-size: cover;
+}
+.bag-section .row .prag.six {
+  background-image: url(../imgs/six.png);
+  background-size: cover;
+}
+.bag-section .row .prag.seven {
+  background-image: url(../imgs/seven.png);
+  background-size: cover;
+}
+.bag-section .row .prag.eight {
+  background-image: url(../imgs/eight.png);
+  background-size: cover;
+}
+.bag-section .row .prag.nine {
+  background-image: url(../imgs/nine.png);
+  background-size: cover;
+}
+.bag-section .row .prag.ten {
+  background-image: url(../imgs/ten.png);
+  background-size: cover;
+}
+.bag-section .row .prag.eleven {
+  background-image: url(../imgs/eleven.png);
+  background-size: cover;
+}
+.bag-section .row .prag p.hide-on-hover {
+  transform: translate(147px, 64px);
   width: 100px;
+  height: 20px;
 }
-.bag-section .row .icon::before {
-  position: absolute;
-  content: "";
-  height: 126px;
-  width: 60px;
-  left: 16px;
-  top: -33px;
+.bag-section .row .prag p.show-on-hover {
+  transform: translate(120px, 16px);
+  width: 175px;
+  height: 20px;
 }
-.bag-section .row .icon.one::before {
-  background-color: #ff9c31;
-}
-.bag-section .row .icon.two::before {
-  background-color: #ffc82c;
-}
-.bag-section .row .icon.three::before {
-  background-color: #b5d825;
-}
-.bag-section .row .icon.four::before {
-  background-color: #30e266;
-}
-.bag-section .row .icon.five::before {
-  background-color: #b358f9;
-}
-.bag-section .row .icon.six::before {
-  background-color: #2097ef;
-}
-.bag-section .row .icon.seven::before {
-  background-color: #20d3d3;
-}
-.bag-section .row .icon.eight::before {
-  background-color: #f95fb7;
-}
-.bag-section .row .icon.nine::before {
-  background-color: #ae8dfc;
-}
-.bag-section .row .icon.ten::before {
-  background-color: #834bef;
-}
-.bag-section .row .icon.eleven::before {
-  background-color: #889b1b;
-}
-.bag-section .row .icon::after {
-  position: absolute;
-  content: "";
-  height: 4px;
-  width: 189px;
-  background-color: #444444;
-  right: -165px;
-  top: 71px;
+
+.prag .show-on-hover,
+.prag:hover .hide-on-hover {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .prag .show-on-hover {
-  display: none;
+  opacity: 0;
 }
 
 .prag:hover .hide-on-hover {
-  display: none;
+  opacity: 0;
 }
 
 .prag:hover .show-on-hover {
-  display: block;
-  
+  opacity: 1;
+}
+.section {
+  background-image: url(../imgs/image1.png);
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* End Bag Section */
